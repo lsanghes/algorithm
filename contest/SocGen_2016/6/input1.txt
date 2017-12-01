@@ -1,0 +1,9 @@
+3
+TIC
+BAC
+5
+TOC
+TIC
+BOC
+BIC
+BAC

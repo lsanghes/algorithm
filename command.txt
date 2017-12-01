@@ -1,0 +1,12 @@
+# nuke the last commit, before push
+git reset --hard HEAD~1
+
+# generate key pair
+ssh-keygen -t rsa -b 4096 -C "sanglin@gmail.com"
+
+# git init
+git config --global user.name "lsang"
+git config --global user.email sanglin@gmail.com
+
+# store git credential for http
+git config credential.helper store

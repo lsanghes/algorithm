@@ -1,0 +1,62 @@
+|------------------|------------------|------------------------------------------|
+|                  | :!<command>      | show command output                      |
+|                  | :set nu          | show line number                         |
+|                  | :set hlsearch    | highlight search                         |
+|------------------|------------------|------------------------------------------|
+| buffer           | :n <filename>    | new file in buffer                       |
+|                  | :o <filename>    | open file in buffer                      |
+|                  | :ls              | list the current buffers                 |
+|                  | :b<num>          | switch buffer                            |
+|                  | :bd              | delete the current buffer                |
+|                  | :Ex              | show explorer                            |
+|                  | ctrl + o         | jump to previous buffer                  |
+|------------------|------------------|------------------------------------------|
+| navigation       | gg               | go to the first line                     |
+|                  | shift + g        | go to the last line.                     |
+|                  | :<num>           | go to line number                        |
+|                  | 0                | begining of line                         |
+|                  | $                | end of line                              |
+|                  | ctrl+f/b         | page down/up                             |
+|                  | w/b              | forward/backward by word                 |
+|                  | shift+<</>>      | shift left/right                         |
+|------------------|------------------|------------------------------------------|
+| visual           | v                | visual                                   |
+|                  | shift + v        | visual line                              |
+|                  | ctrl + shift + v | visual block                             |
+|                  | y                | copy                                     |
+|                  | d                | delete/cut                               |
+|                  | > <              | shift right/left                         |
+|------------------|------------------|------------------------------------------|
+| insert           | :r <filename>    | Reads file and inserts it after cur line |
+|                  | :r !<command>    | insert command output                    |
+|                  | ctrl+d/t         | shift left/right                         |
+|------------------|------------------|------------------------------------------|
+| cut / paste      | yy               | copy whole line                          |
+|                  | d                | cut 1 char                               |
+|                  | dw               | cut to EOW                               |
+|                  | shift + d        | cut to EOL                               |
+|                  | dd               | cut whole line                           |
+|                  | p                | past after cursor                        |
+|                  | shift + p        | past before cursor                       |
+|------------------|------------------|------------------------------------------|
+| redo / undo      | ctrl + r         | redo                                     |
+|                  | u                | undo                                     |
+|------------------|------------------|------------------------------------------|
+| search / replace | *                | search current word                      |
+|                  | /text            | search forward                           |
+|                  | /text\c          | search case-insenstivie                  |
+|                  | /\<text\>        | search exact word                        |
+|                  | ?text            | search backwrd                           |
+|                  | n                | move forward                             |
+|                  | N                | move backword                            |
+|                  | :%s/a/b/gci      | substitue/global/confirm/insensitive     |
+|                  | :%s/a/b/gcI      | substitue/global/confirm/sensitive       |
+|------------------|------------------|------------------------------------------|
+
+λ cat .vimrc
+nnoremap <silent> <F9> :w \| :exec 'w !python' shellescape(@%, 1)<cr>
+set nu
+set hlsearch
+set tabstop=4 shiftwidth=4 expandtab
+vnoremap <silent> +# :s/^/#/<cr>:noh<cr>
+vnoremap <silent> -# :s/^#//<cr>:noh<cr>

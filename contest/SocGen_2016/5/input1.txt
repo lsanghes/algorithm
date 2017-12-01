@@ -1,0 +1,7 @@
+6
+home office
+home garage
+home parents_home
+office lab
+office library
+library main_entrance

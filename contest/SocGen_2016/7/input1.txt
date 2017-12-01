@@ -1,0 +1,19 @@
+17
+Paris
+Paris Tokyo -158
+Tokyo Osaka 336
+Osaka Porto -124
+Porto Alger -59
+Alger Tunis -210
+Paris Osaka -273
+Alger Osaka 286
+Paris Cairo -157
+Cairo Rabat -296
+Osaka Kyoto -168
+Paris Kyoto -393
+Sofia Tunis 32
+Kyoto Sofia -235
+Hanoi Kabul -4
+Paris Hanoi -371
+Kabul Osaka 526
+Rabat Osaka 211

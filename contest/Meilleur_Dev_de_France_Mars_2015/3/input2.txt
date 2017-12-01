@@ -1,0 +1,12 @@
+10
+allemagne;france;suisse;irlande;italie
+summer;ellison;arcu;+33-5484;autriche
+summer;ellison;arcu;+33-5484;autriche
+john;York;purus;+1-366-786-1195;suisse
+john;jones;purus;-33-167088826;suisse
+denise;ellison;purus;+1-8547412367;suisse
+priscilla;conrad;convallis;-33-167088826;italie
+priscilla;conrad;convallis;-33-167088826;italie
+ryan;stephenson;donec;33-52149663;france
+ryan;stephenson;donec;33-52149663;france
+john;baird;donec;+1-179542826;suisse

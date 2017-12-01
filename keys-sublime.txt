@@ -1,0 +1,20 @@
+                 cmd    shift   option  control
+                  ⌘       ⇧       ⌥       ⌃
+
+|-----------------|--------------------|--------------------|
+|                 |        Mac         |        Win         |
+|-----------------|--------------------|--------------------|
+| Focus Sidebar   | ctrl + 0           | ctrl + 0           |
+| Full Text       | cmd + shift + F    | ctrl + shift + F   |
+| Two Columns     | cmd + option + 2   | shift + alt + 2    |
+| Focus Group     | ctrl + 1/2         | ctrl + 1/2         |
+| Move To Group   | ctrl + shift + 1/2 | ctrl + shift + 1/2 |
+| Select Bracket  | ctrl + shift + M   | ctrl + shift + M   |
+| Select Vertical | ctrl + shift + up  | ctrl + alt + up    |
+| Quick Find All  | ctrl + cmd + G     | alt + F3           |
+| Select Line     | cmd + L            | ctrl + L           |
+| Indent          | cmd + ]            | ctrl + ]           |
+| Unindent        | cmd + [            | ctrl + [           |
+| Toggle Wrap     | ctrl + shift + w   | ctrl + shift + w   |
+| Symbol & Emoji  | ctrl + cmd + space |                    |
+|-----------------|--------------------|--------------------|

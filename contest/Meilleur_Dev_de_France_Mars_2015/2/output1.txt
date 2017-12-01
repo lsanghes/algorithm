@@ -1,0 +1,5 @@
+animation 13
+culture 11
+techno 10
+campus 7
+cinema 6

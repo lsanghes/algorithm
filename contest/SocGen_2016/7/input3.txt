@@ -1,0 +1,6 @@
+4
+Tokyo
+Paris Tokyo -40
+Tokyo Paris -340
+Paris Osaka -520
+Osaka Tokyo -100

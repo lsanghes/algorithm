@@ -1,0 +1,19 @@
+17
+Tunis
+Lagos Kyoto -482
+Minsk Tokyo -961
+Paris Sanaa -315
+Sofia Accra -389
+Accra Dhaka 10
+Kabul Dhaka 52
+Sucre Minsk -729
+Tunis Dhaka 5
+Kabul Sucre -983
+Seoul Tunis -595
+Yaren Tunis -6
+Dakar Kyoto 205
+Vaduz Sanaa -168
+Abuja Sanaa -744
+Tokyo Dakar -666
+Lagos Sofia -162
+Praia Sanaa -337

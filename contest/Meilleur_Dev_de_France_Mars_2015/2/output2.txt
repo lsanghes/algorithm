@@ -1,0 +1,5 @@
+planete 18
+politique 16
+musique 15
+sciences 14
+education 12

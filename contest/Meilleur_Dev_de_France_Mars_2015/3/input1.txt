@@ -1,0 +1,8 @@
+6
+angleterre;france;irlande;allemagne
+keith;malone;tortor;+33-9484;etas-unis
+priscilla;conrad;ultrices;+1-130455126;belgique
+josiah;pitts;convallis;+33-9484;etas-unis
+josiah;pitts;convallis;+33-9484;etas-unis
+warren;pitts;scelerisque;+44-0876566426;suisse
+warren;pitts;scelerisque;+44-0876566426;suisse
