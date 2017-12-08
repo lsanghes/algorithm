@@ -1,0 +1,24 @@
+ssh pi@raspberrypi
+
+# install additional packages
+sudo apt-get install samba vim python-setuptools
+sudo pip install pyusb twilio atexit atexit
+
+# samba
+sudo vi /etc/samba/smb.conf
+    read only = no
+    create mask = 0775
+    directory mask = 0775
+sudo smbpasswd -a pi
+sudo /etc/init.d/samba restart
+
+# vim
+:set mouse=
+
+# ant stick
+sudo vi /etc/udev/rules.d/garmin-ant2.rules
+
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0fcf", ATTRS{idProduct}=="1009", RUN+="/sbin/modprobe usbserial vendor=0x0fcf product=0x1009", MODE="0666", OWNER="pi", GROUP="root"
+    -------------
+    SUBSYSTEM=="usb", ATTR{idVendor}=="0fcf", ATTR{idProduct}=="1008", MODE="0666", SYMLINK+="ttyANT2", ACTION=="add"
+    SUBSYSTEM=="usb", ATTR{idVendor}=="0fcf", ATTR{idProduct}=="1009", MODE="0666", SYMLINK+="ttyANT3", ACTION=="add"
