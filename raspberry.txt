@@ -2,7 +2,7 @@ ssh pi@raspberrypi
 
 # install additional packages
 sudo apt-get install samba vim python-setuptools
-sudo pip install twilio
+sudo pip install pyusb twilio atexit atexit
 
 # samba
 sudo vi /etc/samba/smb.conf
@@ -16,9 +16,6 @@ sudo /etc/init.d/samba restart
 :set mouse=
 
 # ant stick
-sudo vi /etc/udev/rules.d/ant-usb-sticks.rules
-    #Serail Driver
-    SUBSYSTEM=="usb", ATTRS{idVendor}=="0fcf", ATTRS{idProduct}=="1009", RUN+="/sbin/modprobe usbserial vendor=0x0fcf product=0x1009", MODE="0666", OWNER="pi", GROUP="root"
-
-    #USB Driver
+sudo vi /etc/udev/rules.d/garmin-ant2.rules
+    SUBSYSTEM=="usb", ATTR{idVendor}=="0fcf", ATTR{idProduct}=="1008", MODE="0666", SYMLINK+="ttyANT2", ACTION=="add"
     SUBSYSTEM=="usb", ATTR{idVendor}=="0fcf", ATTR{idProduct}=="1009", MODE="0666", SYMLINK+="ttyANT3", ACTION=="add"

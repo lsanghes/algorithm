@@ -43,11 +43,11 @@ class Solution:
     def maxProfit2(self, prices):
         if not prices:
             return 0
-        buy, sell = -prices[0], 0 # initial state
+        buy, sell = prices[0], 0 # initial state
         for p in prices[1:]:
             # states can be updated separately due to sequential dependencies
-            buy = max(-p, buy)
-            sell = max(buy+p, sell)
+            buy = min(p, buy)
+            sell = max(p - buy, sell)
         return sell
 
 # test

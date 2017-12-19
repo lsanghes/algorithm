@@ -74,7 +74,6 @@ def solution2(lines):
 
 # Sample Test
 import os, IsoContestTest
-file_path = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
-data_path = file_path + os.sep  + '6'
-IsoContestTest.print_test_result(data_path, solution1)
-IsoContestTest.print_test_result(data_path, solution2)
+q = 6
+test_data_path = "{0}{1}{2}".format(os.path.abspath(os.path.dirname(os.path.realpath(__file__))), os.sep, q)
+IsoContestTest.print_test_result(test_data_path, solution1)
